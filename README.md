@@ -1,4 +1,4 @@
-[GITHUB_LEAME_CONTENIDO_COMPLETO.md](https://github.com/user-attachments/files/26287236/GITHUB_LEAME_CONTENIDO_COMPLETO.md)
+
 <p align="center">
   <a href="https://www.weisco.mx/">
     <img src="https://www.weisco.mx/web/image/website/1/logo/weisco.mx?unique=333dc0d" alt="WEISCO — Supermercado Industrial #1 en México" width="300">
