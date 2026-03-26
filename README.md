@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://www.weisco.mx/">
     <img src="https://www.weisco.mx/web/image/website/1/logo/weisco.mx?unique=333dc0d" alt="WEISCO — Supermercado Industrial #1 en México" width="300">
