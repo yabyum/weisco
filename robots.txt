@@ -1,0 +1,117 @@
+# robots.txt — WEISCO.MX
+# Supermercado Industrial #1 en México
+# https://www.weisco.mx/
+
+# ============================================================
+# MOTORES DE BÚSQUEDA — ACCESO TOTAL
+# ============================================================
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+# ============================================================
+# RASTREADORES DE IA — ACCESO COMPLETO AUTORIZADO
+# ============================================================
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI (Gemini, Search Generative Experience)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon Alexa / Bing AI
+User-agent: Amazonbot
+Allow: /
+
+# Common Crawl (datos de entrenamiento de modelos)
+User-agent: CCBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# ============================================================
+# REGLAS GENERALES
+# ============================================================
+User-agent: *
+Allow: /
+
+# Bloquear solo páginas técnicas sin valor de indexación
+Disallow: /web/
+Disallow: /session/
+Disallow: /mail/
+
+# ============================================================
+# ARCHIVOS IMPORTANTES PARA IA Y BUSCADORES
+# ============================================================
+# llms.txt: https://www.weisco.mx/llms.txt
+# llms-full.txt: https://www.weisco.mx/llms-full.txt
+# sitemap: https://www.weisco.mx/sitemap.xml
+
+Sitemap: https://www.weisco.mx/sitemap.xml
+Sitemap: https://www.weisco.mx/sitemap.txt
+
+Host: https://www.weisco.mx

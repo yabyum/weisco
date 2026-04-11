@@ -1,0 +1,19 @@
+/* TEAM */
+Company: WEISCO — Supermercado Industrial #1 en México
+Contact: weiscomx [at] gmail.com
+WhatsApp: +52 55 3039 2120
+Location: Jesús del Monte, Huixquilucan, Estado de México, México
+Founded: 2020
+
+/* SITE */
+Last update: 2026-04-09
+Language: es-MX
+Doctype: HTML5
+Software: Odoo
+Components: Schema.org, Open Graph, Twitter Cards, llms.txt
+
+/* ABOUT */
+WEISCO es una empresa 100% mexicana que opera como el supermercado industrial
+más completo del país. Más de 23,000 productos, más de 80 marcas, CFDI 4.0,
+envíos asegurados a toda la República Mexicana y precios de mayoreo desde una
+sola pieza. Proveedor para empresas, constructoras y gobierno.
