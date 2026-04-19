@@ -1,10 +1,12 @@
 # robots.txt — WEISCO.MX
-# Supermercado Industrial #1 en México
+# Supermercado Industrial #1 de México
 # https://www.weisco.mx/
+# Última actualización: 2026-04-19
 
 # ============================================================
 # MOTORES DE BÚSQUEDA — ACCESO TOTAL
 # ============================================================
+
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
@@ -15,6 +17,9 @@ Allow: /
 User-agent: Googlebot-News
 Allow: /
 
+User-agent: Googlebot-Video
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 2
@@ -23,12 +28,6 @@ User-agent: Slurp
 Allow: /
 
 User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
 Allow: /
 
 User-agent: facebot
@@ -44,20 +43,24 @@ Allow: /
 # OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
+
 User-agent: ChatGPT-User
 Allow: /
+
 User-agent: OAI-SearchBot
 Allow: /
 
 # Anthropic / Claude
 User-agent: ClaudeBot
 Allow: /
+
 User-agent: Claude-Web
 Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
-# Google AI (Gemini, Search Generative Experience)
+# Google AI (Gemini, SGE, AI Overviews)
 User-agent: Google-Extended
 Allow: /
 
@@ -65,23 +68,28 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Perplexity-User
+Allow: /
+
 # Meta AI
 User-agent: FacebookBot
 Allow: /
+
 User-agent: meta-externalagent
 Allow: /
 
-# Apple
+# Apple Intelligence
 User-agent: Applebot
 Allow: /
+
 User-agent: Applebot-Extended
 Allow: /
 
-# Amazon Alexa / Bing AI
+# Amazon Alexa / Rufus
 User-agent: Amazonbot
 Allow: /
 
-# Common Crawl (datos de entrenamiento de modelos)
+# Common Crawl (entrenamiento de modelos)
 User-agent: CCBot
 Allow: /
 
@@ -94,24 +102,133 @@ User-agent: YouBot
 Allow: /
 
 # ============================================================
+# SCRAPERS DE COMPETENCIA — BLOQUEADOS
+# ============================================================
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SerpstatBot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: magpie-crawler
+Disallow: /
+
+User-agent: linkfluence
+Disallow: /
+
+User-agent: trendkite-akashic-crawler
+Disallow: /
+
+User-agent: SurdotlyBot
+Disallow: /
+
+User-agent: BrandVerity
+Disallow: /
+
+User-agent: ZoominfoBot
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: python-requests
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: SiteSucker
+Disallow: /
+
+User-agent: CloudflareBrowserRenderingCrawler
+Disallow: /
+
+# ============================================================
 # REGLAS GENERALES
 # ============================================================
+
 User-agent: *
 Allow: /
 
-# Bloquear solo páginas técnicas sin valor de indexación
-Disallow: /web/
+# Bloquear rutas técnicas sin valor SEO
+Disallow: /web/login
+Disallow: /web/signup
+Disallow: /web/reset_password
+Disallow: /web/session/
+Disallow: /web/database/
 Disallow: /session/
 Disallow: /mail/
+Disallow: /my/
+Disallow: /shop/cart
+Disallow: /shop/checkout
+Disallow: /shop/payment
+Disallow: /shop/confirmation
+Disallow: /website/lang/
+Disallow: /api/
+Disallow: /*?*order=
+Disallow: /*?*search=
+Disallow: /*?*filter=
+
+Crawl-delay: 3
 
 # ============================================================
-# ARCHIVOS IMPORTANTES PARA IA Y BUSCADORES
+# ARCHIVOS PARA IA Y BUSCADORES
 # ============================================================
-# llms.txt: https://www.weisco.mx/llms.txt
-# llms-full.txt: https://www.weisco.mx/llms-full.txt
-# sitemap: https://www.weisco.mx/sitemap.xml
 
 Sitemap: https://www.weisco.mx/sitemap.xml
 Sitemap: https://www.weisco.mx/sitemap.txt
+
+# Archivos adicionales para IA:
+# https://www.weisco.mx/llms.txt
+# https://www.weisco.mx/llms-full.txt
 
 Host: https://www.weisco.mx
